@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.myToDoListmain {
+	background-color: #000;
+	height: 100vh;
+	width: 100%;
+	overflow-y: auto;
+}
+
+.myToDoListHeading {
+	color: #fff;
+	text-shadow: 0 0 10px #fff;
+	font-weight: bold;
+}
+
+.myListInputMain {
+	margin: 0px auto;
+	width: 720px;
+	display: flex;
+}
+
+#myListInput {
+	padding: 10px 16px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #fff;
+	font-weight: 600;
+	border-style: none;
+	border-radius: 6px;
+	width: 500px;
+	height: 60px;
+}
+
+#myListAddButton {
+	width: 200px;
+	height: 60px;
+	font-size: 20px;
+	border-style: none;
+	border-radius: 6px;
+	margin-left: 20px;
+	background-color: #fff;
+	box-shadow: 0 0 10px #fff;
+	text-shadow: 0 0 2px #000;
+}
+
+#myListInput:focus, #myListAddButton:focus {
+	outline: none;
+	box-shadow: 0 0 20px #fff;
+}
+
+#myListMain {
+	width: 740px;
+	margin: 0px auto;
+	padding: 10px;
+	border-radius: 6px;
+}
+
+.myListItem.checked {
+  text-decoration: line-through;
+  padding-left: 40px;
+  background-color: #00ff48;
+  box-shadow: 0 0 10px #00ff48;
+}
+
+.myListItem.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #000;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 13px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 8px 16px;
+}
+
+.close:hover {
+  background-color: #ff0000;
+  color: white;
+}
+
+.myListItem {
+	background-color: #fff;
+	padding: 10px;
+	border-radius: 6px;
+	position: relative;
+	margin-top: 10px;
+	box-shadow: 0 0 10px #fff;
+	font-weight: bold;
+}
